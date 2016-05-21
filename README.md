@@ -2,17 +2,21 @@
 
 ## Introduction
 
-This repository contains sample mining settings and several miner program's windows binary to help multi algo switching at miningpoolhub.com
+This repository contains sample mining settings and several miner program's windows binary to help multi algo switching at https://miningpoolhub.com
 
 
 releases : https://github.com/miningpoolhub/all-in-one-miner/releases
 
 
 ethminer 1.0.8 - https://github.com/Genoil/cpp-ethereum
+
 sgminer 5.3.1 - https://github.com/miningpoolhub/sgminer
 
 
 ## Usage
+
+1, Select appropriate auto switching item at Hub Workers page ( https://miningpoolhub.com/?page=account&action=hubworkers )
+2. Run below batch file
 
     setx GPU_MAX_ALLOC_PERCENT 100
     setx GPU_USE_SYNC_OBJECTS 1
@@ -29,7 +33,6 @@ sgminer 5.3.1 - https://github.com/miningpoolhub/sgminer
     sgminer --no-retry -k darkcoin-mod -o stratum+tcp://hub.miningpoolhub.com:12007 -u username.workername -p x
     sgminer --no-retry -k marucoin-mod -o stratum+tcp://hub.miningpoolhub.com:12008 -u username.workername -p x
     sgminer --no-retry -k bitblock -o stratum+tcp://hub.miningpoolhub.com:12009 -u username.workername -p x
-    sgminer --no-retry -k lyra2rev2 -o stratum+tcp://hub.miningpoolhub.com:12018 -u username.workername -p x
 
     timeout 1
     goto start
