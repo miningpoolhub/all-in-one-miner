@@ -16,6 +16,7 @@ sgminer 5.3.1 - https://github.com/miningpoolhub/sgminer
 ## Usage
 
 1, Select appropriate auto switching item at Hub Workers page ( https://miningpoolhub.com/?page=account&action=hubworkers )
+
 2. Run below batch file
 
     setx GPU_MAX_ALLOC_PERCENT 100
